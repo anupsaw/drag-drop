@@ -11,10 +11,12 @@ function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text\html");
     var element = document.getElementById(data);
-    if (element.classList.contains(ev.target.id)) {
-        document.getElementById("error").style.display = "none";
-    } else {
-        document.getElementById("error").style.display = "block";
+    if (ev.target.id !== "") {
+        if (element.classList.contains(ev.target.id)) {
+            document.getElementById("error").style.display = "none";
+        } else {
+            document.getElementById("error").style.display = "block";
+        }
     }
     ev.target.appendChild(document.getElementById(data));
 }
