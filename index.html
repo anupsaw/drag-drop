@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="child-box animals" draggable="true" ondragstart="drag(event)" id="Tiger">Tiger</div>
+        <div class="child-box animals" draggable="true" ondragstart="drag(event)" id="Deer">Deer</div>
+        <div class="child-box animals" draggable="true" ondragstart="drag(event)" id="Cow">Cow</div>
+        <div class="child-box animals" draggable="true" ondragstart="drag(event)" id="Cat">Cat</div>
+        <div class="child-box birds" draggable="true" ondragstart="drag(event)" id="Parrot">Parrot</div>
+        <div class="child-box birds" draggable="true" ondragstart="drag(event)" id="Hummingbird">Hummingbird</div>
+        <div class="child-box animals" draggable="true" ondragstart="drag(event)" id="Dog">Dog</div>
+        <div class="child-box birds" draggable="true" ondragstart="drag(event)" id="Owl">Owl</div>
+        <div class="child-box birds" draggable="true" ondragstart="drag(event)" id="Crow">Crow</div>
+        <div class="child-box birds" draggable="true" ondragstart="drag(event)" id="Sparrow">Sparrow</div>
+    </div>
+
+<div id="error">
+    <p style="color:red">your answer is wrong.</p>
+</div>
+    <div class="answer-box" ondrop="drop(event)" ondragover="allowDrop(event)" id="birds">
+        <div class="box-header"><span>Birds</span></div>
+    </div>
+
+    <div class="answer-box" ondrop="drop(event)" ondragover="allowDrop(event)" id="animals">
+        <div class="box-header"><span>Animals</span></div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
